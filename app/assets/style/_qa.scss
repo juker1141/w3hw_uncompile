@@ -1,0 +1,133 @@
+.qa_banner{
+  background: url(../img/qa_banner.png) no-repeat;
+  background-position: center center;
+  height: 304px;
+  .title{
+    align-items: center;
+    padding-top: 208.24px;
+  }
+  h2{
+    font-size: 64px;
+    display: inline;
+    padding: 0;
+    padding-right: 10px;
+  }
+  @include pad{
+    background: url(../img/qa_banner_mobile.png) no-repeat;
+    height: 304px;
+    background-size: cover;
+    background-position: center 100%;
+    .container{
+      max-width: 672px;
+    }
+    .title{
+      padding-top: 237px;
+    }
+    h2{
+      font-size: 48px;
+      line-height: 80px;
+      padding-right: 16px;
+    }
+    img{
+      width: 48px;
+    }
+  }
+  @include mobile{
+    height: 143px;
+    h2{
+      font-size: 48px;
+      line-height: 80px;
+      padding-right: 16px;
+    }
+    .container{
+      max-width: 352px;
+    }
+    .title{
+      padding-top: 83px;
+    }
+    h2{
+      font-size: 28px;
+      padding-right: 8px;
+    }
+    img{
+      width: 24px;
+    }
+  }
+}
+.content{
+  h3{
+    font-size: 32px;
+    line-height: 63px;
+    font-weight: 900;
+    margin-top: 79px;
+    @include pad{
+      font-size: 28px;
+      line-height: 63px;
+      margin-top: 28.5px;
+      margin-bottom: 20.5px;
+    }
+    @include mobile{
+      font-size: 20px;
+      margin-top: 6.5px;
+      margin-bottom: 0;
+    }
+  }
+}
+.card{
+  margin-bottom: 156px;
+  &_item_header{
+    border: 1px solid #000;
+    font-size: 20px;
+    a{
+      color: #000;
+      font-weight: 900;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 38px;
+    }
+  }
+  li:last-child{
+    border-bottom: 1px solid #000;
+  }
+  &_item_body{
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+    font-size: 16px;
+    padding: 22px 38px;
+    background: #F2F2F2;
+    .wrap_text{
+      display: none;
+    }
+  }
+  &_item:not(.active) .up{
+    display: none;
+  }
+  &_item.active .down{
+    display: none;
+  }
+  @include pad{
+    margin-bottom: 104px;
+    &_item_header{
+      font-size: 16px;
+      a{
+        padding: 16px 24px;
+      }
+    }
+    &_item_body{
+      font-size: 14px;
+      padding: 16px 24px;
+    }
+  }
+  @include mobile{
+    margin-bottom: 56px;
+    &_item_header a{
+      padding: 16px 16px;
+    }
+    &_item_body{
+      padding: 16px 16px;
+      .wrap_text{
+        display: block;
+      }
+    }
+  }
+}

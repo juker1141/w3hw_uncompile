@@ -1,0 +1,82 @@
+.header{
+  li{
+    width: 400px;
+    height: 103px;
+    border-left: solid 1px #DCDCDC;
+    border-right: solid 1px #DCDCDC;
+  }
+  a{
+    font-size: 42px;
+    line-height: 63px;
+    color: #000;
+    font-weight: 500;
+    padding: 10px 0;
+    justify-content: center;
+    border-top: 10px solid #fff;
+    img{
+      margin-right: 8px;
+    }
+    &:hover{
+      border-bottom: 10px solid #AA0601;
+    }
+  }
+}
+.product_banner{
+  justify-content: space-between;
+  height: 309px;
+  margin-bottom: 84px;
+  li{
+    flex-basis: 49.375%;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.product_title{
+  font-size: 42px;
+  line-height: 63px;
+  text-align: center;
+  span{
+    font-size: 32px;
+  }
+}
+.product_list{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 52px;
+  li{
+    margin-bottom: 104px;
+  }
+  p{
+    font-size: 24px;
+    color: #000;
+  }
+  .product_information{
+    margin-bottom: 4px;
+  }
+  .product_price{
+    color: #AA0601;
+    font-weight: 500;
+  }
+  .product_color{
+    width: 0;
+    display: flex;
+    &_brown{
+      border: 12px solid #5F3E2D;
+      border-radius: 15%;
+      margin-right: 8px;
+    }
+    &_tan{
+      border: 12px solid #B75929;
+      border-radius: 15%;
+    }
+  }
+  &_optical{
+    .product_information{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glasses</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style/all.css">
+  <script src="https://kit.fontawesome.com/a46ef2ddc5.js" crossorigin="anonymous"></script>
+  <script src="assets/js/jquery-3.5.0.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- layout-header開始 -->
+    <header>
+      <div class="l_header d-flex">
+        <!-- 漢堡選單 -->
+        <a href="#" class="ham-icon">
+          <i class="fas fa-bars"></i>
+        </a>
+        <!-- logo標誌 -->
+        <a href="index.html">
+          <h1>glasses</h1>
+        </a>
+        <ul class="d-flex menu">
+          <li><a href="product.html">系列鏡框</a></li>
+          <li><a href="#">門市據點</a></li>
+          <li><a href="#">部落格</a></li>
+          <li><a href="qa.html">常見問題</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- layout-header結束 -->
+    <%- contents %>
+    <!-- layout-footer開始 -->
+    <footer>
+      <section class="l_footer container">
+        <div class="l_footer_head">
+          <div class="l_footer_menu d-flex">
+            <ul class="d-flex">
+              <li><a href="#">首頁</a></li>
+              <li><a href="#classic_ser">系列鏡框</a></li>
+              <li><a href="#">門市據點</a></li>
+              <li><a href="#">部落格</a></li>
+              <li><a href="#">常見問題</a></li>
+            </ul>
+            <div class="l_footer_socialMedia">
+              <a href="#"><img src="assets/img/icon-fb.svg" alt="fb"></a>
+              <a href="#"><img src="assets/img/icon-ig.svg" alt="ig"></a>
+              <a href="#"><img src="assets/img/icon-line.svg" alt="line"></a>
+            </div>
+          </div>
+          <ul class="l_footer_information">
+            <li class="d-flex"><img src="assets/img/icon-phone.svg" alt="phone"><a
+                href="tel:+886-800-000-000">0800-000-000</a>
+            </li>
+            <li class="d-flex"><img src="assets/img/icon-mail.svg" alt="mail"><a
+                href="mailto:glasses@business.com">glasses@business.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="link_bottom"></div>
+        <div class="l_footer_copyright d-flex">
+          <a href="#"><img src="assets/img/logo.png" alt="logo"></a>
+          <div class="l_footer_copyright-between d-flex">
+            <p>Copyright © 2020 Glasses.All rights reserved.</p>
+            <ul class="d-flex">
+              <li><a href="#">隱私權政策</a></li>
+              <li><a href="#">服務條款</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- layout-footer結束 -->
+  </div>
+  <script src="assets/js/all.js"></script>
+</body>
+
+</html>
