@@ -32,11 +32,33 @@
     a{
       font-size: 28px;
       line-height: 42px;
-      // padding: 5.5px 0;
     }
     img{
       width: 32px;
       height: 32px;
+    }
+  }
+  @include mobile{
+    .container{
+      max-width: 375px;
+    }
+    li{
+      width: 125px;
+      height: 35px;
+      &:hover{
+        border-bottom: 5px solid #AA0601;
+      }
+    }
+    a{
+      font-size: 14px;
+      line-height: 19px;
+      img{
+        margin-right: 5px;
+      }
+    }
+    img{
+      width: 15px;
+      height: 15px;
     }
   }
 }
@@ -52,9 +74,24 @@
       object-fit: cover;
     }
   }
+  &_mobile{
+    display: none;
+  }
   @include pad{
     li{
       flex-basis: 50.00%;
+    }
+  }
+  @include mobile{
+    &_pc{
+      display: none;
+    }
+    &_mobile{
+      display: flex;
+      height: 144px;
+      max-width: 375px;
+      margin: 0 auto;
+      margin-bottom: 24px;
     }
   }
 }
@@ -78,6 +115,15 @@
     }
     h2{
       font-size: 24px;
+    }
+  }
+  @include mobile{
+    margin-bottom: 20px;
+    p{
+      font-size: 20px;
+    }
+    h2{
+      font-size: 16px;
     }
   }
 }
@@ -121,6 +167,15 @@
       justify-content: space-between;
     }
   }
+  .product_block_mb{
+    margin-bottom: 88px;
+  }
+  &_sunglasses_pad{
+    display: none;
+  }
+  .product_mobile_show{
+    display: none;
+  }
   @include pad{
     li{
       width: 324px;
@@ -131,6 +186,59 @@
     }
     .product_information{
       margin-bottom: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    &_optical{
+      li:nth-child(11), li:nth-child(12){
+        display: none;
+      }
+    }
+    &_sunglasses{
+      display: none;
+    }
+    &_sunglasses_pad{
+      display: flex;
+    }
+    .product_block_mb_pad{
+      margin-bottom: 53px;
+    }
+  }
+  @include mobile{
+    &_sunglasses{
+      display: flex;
+    }
+    &_sunglasses_pad{
+      display: none;
+    }
+    li{
+      display: none;
+    }
+    .product_mobile_show{
+      display: flex;
+      &:last-child{
+        margin-bottom: 40px;
+      }
+    }
+    li{
+      width: 352px;
+      margin-bottom: 32px;
+      img{
+        height: 166px;
+      }
+    }
+    p{
+      font-size: 16px;
+      color: #000;
+    }
+    .product_color{
+      &_brown{
+        border: 8px solid #5F3E2D;
+        margin-right: 5px;
+      }
+      &_tan{
+        border: 8px solid #B75929;
+      }
     }
   }
 }
@@ -139,26 +247,24 @@
 .pagination{
   justify-content: center;
   margin-bottom: 156px;
-  ul{
-    li{
-      border-top: solid 1px #555555;
-      border-left: solid 1px #555555;
-      border-bottom: solid 1px #555555;
-      height: 50px;
-      width: 45px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      &:first-child,&:last-child{
-        width: 80px;
-        background: #F2F2F2;
-      }
-      &:hover{
-        background: #000;
-      }
-      &:last-child{
-        border-right: solid 1px #555555;
-      }
+  ul li{
+    border-top: solid 1px #555555;
+    border-left: solid 1px #555555;
+    border-bottom: solid 1px #555555;
+    height: 50px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:first-child,&:last-child{
+      width: 80px;
+      background: #F2F2F2;
+    }
+    &:hover{
+      background: #000;
+    }
+    &:last-child{
+      border-right: solid 1px #555555;
     }
   }
   a{
@@ -174,10 +280,36 @@
     line-height: 29px;
     padding: 7px 10px;
   }
+  @include pad{
+    margin-bottom: 104px;
+  }
+  @include mobile{
+    margin-bottom: 56px;
+    ul li{
+      height: 35px;
+      width: 30px;
+      &:first-child,&:last-child{
+        width: 55px;
+      }
+    }
+    a{
+      font-size: 11px;
+      line-height: 17px;
+      padding: 7px 15px;
+    }
+    .updown_btn{
+      font-size: 12px;
+      line-height: 18px;
+      padding: 8px;
+    }
+  }
 }
 
 .product_series:nth-child(2){
   .pagination{
     display: none;
+    @include pad{
+      display: flex;
+    }
   }
 }
