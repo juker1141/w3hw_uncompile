@@ -3,6 +3,7 @@
   background-position: center center;
   background-size: cover;
   height: 304px;
+  margin-bottom: 16px;
   .title{
     align-items: center;
     padding-top: 208.24px;
@@ -12,6 +13,9 @@
     display: inline;
     padding: 0;
     padding-right: 10px;
+  }
+  img{
+    display: block;
   }
   @include pad{
     background: url(../img/qa_banner_mobile.png) no-repeat;
@@ -53,5 +57,84 @@
     img{
       width: 24px;
     }
+  }
+}
+
+.select_block{
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  h3{
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 24px 0 0;
+  }
+  select{
+    width: 266px;
+    height: 45px;
+    appearance: none;
+    background: url(../img/week4/select_btn.svg) no-repeat transparent;
+    background-size: 15px 15px;
+    background-position: 230px center;
+    padding: 0 19px;
+  }
+  option{
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 19px;
+  }
+}
+
+.location_shop{
+  justify-content: space-between;
+}
+
+.location_shop_list{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 128px;
+}
+
+.location_shop_information{
+  width: 384px;
+  margin-bottom: 28px;
+  img{
+    display: block;
+  }
+  h4{
+    font-size: 24px;
+    line-height: 33px;
+    padding: 16px 24px;
+    border: 1px #00000020 solid;
+    font-weight: 900;
+  }
+}
+
+.location_shop_information_detailed{
+  padding: 16px 36px 8px 36px;
+  border-left: solid 1px #00000020;
+  border-right: solid 1px #00000020;
+  img{
+    width: 24px;
+    height: 24px;
+    &[alt="icon-phone"]{
+      width: 26px;
+    }
+  }
+  p{
+    margin-left: 8px;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+}
+.map_show_btn{
+  font-size: 20px;
+  padding: 19px 0;
+  justify-content: center;
+  color: #fff;
+  background: #000;
+  &:hover{
+    background: rgb(68, 66, 66);
   }
 }

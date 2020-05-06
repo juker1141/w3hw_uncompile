@@ -3,6 +3,8 @@ $('.ham-icon').click(function(e) {
   e.preventDefault();
   $('.menu').toggleClass('active')
 })
+// layout效果結束
+
 
 // Q&A頁面問答收合
 // 隱藏所有的 li 內文
@@ -23,10 +25,12 @@ $('.card_item').click(function (e) {
   // 讓其他 li body 收合
   $(this).siblings().children().next().slideUp();
 })
+// Q&A頁面結束
+
 
 // product頁面切換品項
 // 先將預設以外的隱藏
-$('.product_series').eq(1).hide()
+$('.product_series').eq(1).hide();
 // 點擊顯示optical並關閉其他品項
 $('.product_button_1').click(function (e) { 
   e.preventDefault();
@@ -36,4 +40,19 @@ $('.product_button_1').click(function (e) {
 $('.product_button_2').click(function (e) { 
   e.preventDefault();
   $('.product_series').eq(1).show().siblings().hide()
+});
+// product頁面結束
+
+// location頁面開始
+// 先將預設以外的隱藏
+$('.select_block').eq(1).hide();
+$('.location_shop_map').hide();
+
+
+$('.map_show_btn').click(function (e) { 
+  e.preventDefault();
+  $('.location_shop_information').eq(0).show().siblings().toggle();
+  $('.select_city').toggle();
+  $('.select_shop_location').toggle();
+  $('.location_shop_map').toggle();
 });
