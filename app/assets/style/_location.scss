@@ -1,0 +1,57 @@
+.location_banner{
+  background: url(../img/qa_banner.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 304px;
+  .title{
+    align-items: center;
+    padding-top: 208.24px;
+  }
+  h2{
+    font-size: 64px;
+    display: inline;
+    padding: 0;
+    padding-right: 10px;
+  }
+  @include pad{
+    background: url(../img/qa_banner_mobile.png) no-repeat;
+    height: 304px;
+    background-size: cover;
+    background-position: center 100%;
+    .container{
+      max-width: 672px;
+    }
+    .title{
+      padding-top: 237px;
+    }
+    h2{
+      font-size: 48px;
+      line-height: 80px;
+      padding-right: 16px;
+    }
+    img{
+      width: 48px;
+    }
+  }
+  @include mobile{
+    height: 143px;
+    h2{
+      font-size: 48px;
+      line-height: 80px;
+      padding-right: 16px;
+    }
+    .container{
+      max-width: 352px;
+    }
+    .title{
+      padding-top: 83px;
+    }
+    h2{
+      font-size: 28px;
+      padding-right: 8px;
+    }
+    img{
+      width: 24px;
+    }
+  }
+}
